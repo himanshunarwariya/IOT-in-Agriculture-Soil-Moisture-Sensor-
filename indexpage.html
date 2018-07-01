@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Soil Moisture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+<style>
+
+#header{
+
+color:white;
+background-color:#2c3e50;
+padding:20px;
+max-width:100%;
+height:15%;
+top: 0;
+
+
+background-image:url(garden_12-512.png);
+background-repeat: no-repeat;
+background-size: 10% 75%;
+background-position: 99% 45%;
+
+
+
+font-family:arial;
+font-size:1.5vw;
+letter-spacing: .0625rem;
+
+}
+a:hover {
+    color: #16ce98;
+    font-size:20px;
+}#mid{
+color:white;
+background-color:#16ce98;
+padding:20px;
+max-width:100%;
+max-height:60%;
+text-align: center;
+
+background-image:url(field3.jpg);
+background-repeat: no-repeat;
+
+font-weight: 700;
+font-size:45px;
+    font-family:arial;
+letter-spacing: .0625rem;
+
+
+
+}
+
+img{
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+}
+.button {
+    background-color: #2c3e50;
+    border: none;
+    color: white;
+    font-family:arial;
+    font-size:1.1vw;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+letter-spacing: .0625rem;
+    
+}
+
+#about{
+            color:#2c3e50;
+background-color:white;
+padding:20px;
+max-width:100%;
+max-height:60%;
+top: 0;
+
+
+
+
+text-align:center;
+font-family:arial;
+font-size:2vw;
+letter-spacing: .0625rem;
+
+
+
+
+
+
+
+
+}
+
+
+
+#footer{
+color:white;
+background-color:#2c3e50;
+padding:20px;
+max-width:100%;
+max-height:45%;
+top: 0;
+
+
+
+
+font-family:arial;
+font-size:1.5vw;
+letter-spacing: .0625rem;
+
+
+}
+
+
+
+#hr1{
+   display: block;
+   border: 0;
+
+   height: 75px;
+
+   background-image:url(stylish-hr.png);
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+#hr2{
+   display: block;
+   border: 0;
+
+   height: 75px;
+
+   background-image:url(stylish-hr2.png);
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    
+      font-family:arial;
+      font-size: 16px;
+      letter-spacing: .0625rem;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:1.2vw;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div id="header" >
+
+<h1>SOIL MOISTURE</h1>
+
+
+</div>
+
+<ul>
+  <li><a class="active" href="index.html">HOME</a></li>
+  <li><a href="#about">ABOUT</a></li>
+  <li><a href="show_moisture.html">SHOW MOISTURE</a></li>
+  
+</ul>
+
+<div id="mid">
+
+<img src="IOTfinal.png" alt="IOT in Agriculture" style="width:500px;max-height:450px;">
+<hr id="hr1">
+<h1 style="font-size:6vw;">MONITER YOUR FIELDS ANYTIME</h1> 
+</div>
+
+
+<div id="about">
+
+
+<h2 style="font-size:5vw;">ABOUT</h2>
+<hr id="hr2">
+<p>
+The basic concept of our project is to provide a convenient and efficient way for measuring and monitoring the moisture level of soil. This may prove to be very beneficial for our farmers to keep a check over under and over irrigation in fields hence leading to healthy crop. This may not only prevent heavy loss of crop damage via ill irrigation practices but also provide a good method to conserve water also. 
+</p>
+<p>
+The methodology of our project is to connect a series of moisture sensors via IOT devices and providing all the data i.e. moisture values at a time over a website or an application so that this data can be accessed by the concerned farmers from any part of the globe. Furthermore, the water irrigation system in the fields can be turned on or off as per need of the planted crop in accordance with the received data from the sensors.
+</p>
+<p>
+This will eliminate the manual need to switch on/off the irrigation system and also lessen the carefulness required the work of irrigation and checking the water levels in the field. Our system could prove to be very beneficial for the sake of our farmers they can now bother less over the work of irrigating the fields.
+</p>
+
+</div>
+
+<div id="footer">
+<h2 style="float:right">Guided By</h2><br><br><br><br>
+<p style="float:right">Mrs. Shweta Gangrade</p>
+<h2>Project Made By</h2><br>
+<pre>
+  Himanshu Singh Narwariya
+  Mayank Verma
+  Mayuri Ghadge
+  Muskan Vijaywargiya
+  Pankhudi Bansal
+</pre>
+
+</div>
+
+</body>
+</html>
+
+
+
+
